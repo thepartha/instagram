@@ -136,7 +136,6 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showUserTable" {
-            print("Inside Prepare for segue")
             let vc = segue.destination as? UserTableViewController
             vc?.modalPresentationStyle = .fullScreen
         }
